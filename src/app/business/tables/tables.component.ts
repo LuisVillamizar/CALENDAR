@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FullCalendarComponent  } from '@fullcalendar/angular';
+import dayGridPlugin from '@fullcalendar/daygrid';
 
 @Component({
   selector: 'app-tables',
@@ -8,5 +10,7 @@ import { Component } from '@angular/core';
   styleUrl: './tables.component.css'
 })
 export default class TablesComponent {
-
+  calendarPlugins = [dayGridPlugin];
 }
+
+
